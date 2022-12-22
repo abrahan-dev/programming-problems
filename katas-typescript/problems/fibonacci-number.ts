@@ -2,7 +2,6 @@
 // called the Fibonacci sequence, such that each number is the 
 // sum of the two preceding ones, starting from 0 and 1
 
-
 export function fib(n: number, memo: Map<number, number> = new Map()): number {
     if (n <= 1) {
         return n;
