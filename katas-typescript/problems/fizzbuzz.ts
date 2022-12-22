@@ -1,16 +1,14 @@
 // https://www.codurance.com/katalyst/fizzbuzz
 
 export function fizzbuzz(number: number) {
-    const multipleOf3 = number % 3 === 0
-    const multipleOf5 = number % 5 === 0
+    const isFizz = number % 3 === 0
+    const isBuzz = number % 5 === 0
 
-    if (multipleOf3 && multipleOf5) {
+    if (isFizz && isBuzz) {
         return "FizzBuzz"
-    }
-    if (multipleOf3) {
+    } else if (isFizz) {
         return "Fizz"
-    }
-    if (multipleOf5) {
+    } else if (isBuzz) {
         return "Buzz"
     }
     return number.toString()
